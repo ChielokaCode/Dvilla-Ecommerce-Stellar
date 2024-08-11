@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"foodItems.tsx -> @/components/food-grid/FoodGrid\":{\"id\":\"foodItems.tsx -> @/components/food-grid/FoodGrid\",\"files\":[\"static/chunks/src_components_food-grid_FoodGrid_tsx.js\"]}}"

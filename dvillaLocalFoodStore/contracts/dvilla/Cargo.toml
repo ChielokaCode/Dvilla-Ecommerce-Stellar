@@ -1,0 +1,15 @@
+[package]
+name = "dvilla_token"
+description = "Soroban standard token contract"
+version = "0.0.6"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+soroban-sdk = { workspace = true }
+soroban-token-sdk = { version = "21.4.0" }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
