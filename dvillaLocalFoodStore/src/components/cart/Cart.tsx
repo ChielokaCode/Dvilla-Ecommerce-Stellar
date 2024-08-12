@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { Button, Stack, Table } from 'react-bootstrap';
 import Image from 'next/image';
 import { HStack } from '@chakra-ui/react';
-import { MintButton } from "./MintButton";
-import { Utils } from "../../../shared/utils";
+// import { MintButton } from "./MintButton";
+// import { Utils } from "../../../shared/utils";
 import toast, { ToastBar } from 'react-hot-toast';
 import { isConnected, getPublicKey } from '@stellar/freighter-api';
 import { executeSmartContractFunction, contract, numberToU64, accountToScVal, numberToi128, stringToScValString, accountPub } from '../freighter/utils';
@@ -64,7 +64,6 @@ const Cart: React.FC = props => {
         if (connected) {
           const publicKey = await getPublicKey();
           setAccount(publicKey);
-          toast.success(publicKey);
           fetchBalances(publicKey);
         }
       };
@@ -235,9 +234,9 @@ const Cart: React.FC = props => {
             </div>
             <div className='mt-4 text-right'>
                 <HStack>
-                <MintButton/> 
+                {/* <MintButton/>  */}
                 <MintTokens recipientAddress={account} contractAddress={dvillacontractId}/>           
-          <h6>Your balance:  {dvlaBalance} DVLA</h6>
+          {/*<h6>Your balance: {dvlaBalance} DVLA</h6>*/}
             </HStack>
             </div>
             </HStack>

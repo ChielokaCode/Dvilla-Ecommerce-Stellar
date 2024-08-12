@@ -6,7 +6,7 @@ const Reward = () => {
   return (
     <Container>
       
-        <h5 className='m-4'><b>Note: </b>You can start earning after you have bought foods and fruits over 50 DVLA</h5>
+        <h5 className='m-4'><b>Note: </b>You can start earning after you have bought orders over 50 DVLA</h5>
         <div className='w-1/4 bg-zinc-300 rounded-xl shadow-lg border-2 border-black p-4 m-4'>
             <Stack direction='vertical' gap={50}>
                 <Stack direction='horizontal'>
